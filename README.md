@@ -1,4 +1,11 @@
+## Dependencies
+
+1. Install `nvm`: https://github.com/nvm-sh/nvm#installing-and-updating
+2. Install `yarn`: https://classic.yarnpkg.com/lang/en/docs/install/
+
 ## Running the app
+
+First run `nvm use` in the project directory
 
 ```bash
 # development
