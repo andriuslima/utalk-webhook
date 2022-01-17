@@ -9,7 +9,12 @@ async function bootstrap() {
       transports: [
         new winston.transports.Console({ format: winston.format.simple() }),
         new winston.transports.File({
-          format: winston.format.json(),
+          format: winston.format.combine(
+            winston.format.timestamp({
+              format: 'DD-MM-YYYY HH:mm:ss'
+            }),
+            winston.format.json(),
+          ),
           filename: 'logs/app.log',
         }),
       ],
